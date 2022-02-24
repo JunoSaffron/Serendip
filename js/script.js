@@ -7,6 +7,8 @@ let formClose = document.querySelector('#form-close');
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.navbar');
 
+let videoBtn = document.querySelectorAll('.vid-btn');
+
 menu.onclick = () =>{
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');
@@ -34,12 +36,23 @@ formClose.addEventListener('click', () =>{
     loginForm.classList.remove('active');
 });
 
+
+videoBtn.forEach(btn =>{
+    btn.addEventListener('click', ()=>{
+        document.querySelector('.controls .active').classList.remove('active');
+        btn.classList.add('active');
+        let src = btn.getAttribute('data-src');
+        document.querySelector('#video-slider').src = src;
+    });
+});
+
 document.querySelectorAll('.image-slider img').forEach(images =>{
     images.onclick = () =>{
         var src = images.getAttribute('src');
         document.querySelector('.main-home-image').src = src;
     };
 });
+
 
 var swiper = new Swiper(".review-slider", {
     spaceBetween: 20,
