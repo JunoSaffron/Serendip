@@ -98,6 +98,7 @@ var swiper = new Swiper(".image-slider", {
 });    
 
 
+/*
 
 const form = document.querySelector("form"),
 statusTxt = form.querySelector(".button-area span");
@@ -156,4 +157,4 @@ form.onsubmit = (e)=>{
   }
   let formData = new FormData(form);
   xhr.send(formData);
-}
+}*/
