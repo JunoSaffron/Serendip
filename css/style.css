@@ -269,13 +269,13 @@ header .search-bar-container label:hover{
 
 .home .row .image{
     flex:1 1 42rem;
-    padding-top: 5rem;
+    padding-top: 10rem;
     text-align: center;
 }
 
 .home .row .image img{
-    height:15rem;
-    animation: float 3s linear infinite;
+    height:35rem;
+    animation: float 4s linear infinite;
 }
 
 @keyframes float{
@@ -283,12 +283,12 @@ header .search-bar-container label:hover{
         transform: translateY(0rem);
     }
     50%{
-        transform: translateY(-3rem);
+        transform: translateY(-7rem);
     }
 }
 
 .home .row .content h3{
-    font-size: 3rem;
+    font-size: 5rem;
     color:var(--main-color);
     text-transform: uppercase;
 }
