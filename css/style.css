@@ -1216,6 +1216,18 @@ section #hero {
     overflow: hidden;
     padding: 0;
 }
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper .wrapper__video{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 
 
 
