@@ -66,7 +66,7 @@ section{
 
 #menu-btn{
     font-size: 3rem;
-    color:var(--main-color);
+    color:black;
     cursor: pointer;
     display: none;
 }
@@ -94,14 +94,14 @@ header .logo span{
 }
 
 header .navbar a{
-  color:Black;
+  color:black;
   font-size: 2rem;
   margin:0 .8rem;
 }
 
 header .navbar a:hover{
-  color:#7B3F00;
-  font-size: 2.4rem;
+  font-size: 2.3rem;
+  font-weight: bolder;
 }
 
 header .icons i{
@@ -250,7 +250,8 @@ header .search-bar-container label:hover{
 
 .home{
     min-height: 100vh;
-    padding-top: 12rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     background: url(../image/home-bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
@@ -270,7 +271,7 @@ header .search-bar-container label:hover{
 .home .row .image{
     flex:1 1 42rem;
     padding-top: 10rem;
-    text-align: center;
+    text-align: left;
 }
 
 .home .row .image img{
@@ -376,6 +377,156 @@ header .search-bar-container label:hover{
     font-size: 1.7rem;
     padding-top: 1rem;
     color:var(--main-color);
+}
+
+/* Product Home Starts */
+.producthome {
+  padding-top: 10rem;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.producthome .slide {
+  display: none;
+  height: calc(100vh - 8rem)
+}
+
+.producthome .slide.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.producthome .slide .content {
+  width: 50%;
+  padding: 2rem 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #FAF2B5;
+  position: relative;
+}
+
+.producthome .slide .content img {
+  height: 25rem;
+  width: 25rem;
+  margin-bottom: 2rem;
+  -webkit-animation: fadeUp .2s linear backwards .2s;
+          animation: fadeUp .2s linear backwards .2s;
+  display: none;
+}
+
+.producthome .slide .content span {
+  color: #697184;
+  display: block;
+  font-size: 2rem;
+  padding-bottom: .5rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  -webkit-animation: fadeUp .2s linear backwards .4s;
+          animation: fadeUp .2s linear backwards .4s;
+}
+
+.producthome .slide .content h3 {
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  color: #222;
+  -webkit-animation: fadeUp .2s linear backwards .6s;
+          animation: fadeUp .2s linear backwards .6s;
+}
+
+.producthome .slide .content .btn {
+  -webkit-animation: fadeUp .2s linear backwards .8s;
+          animation: fadeUp .2s linear backwards .8s;
+}
+
+.producthome .slide .content .controls {
+  position: absolute;
+  bottom: 12%;
+  right: -7rem;
+}
+
+.producthome .slide .content .controls div {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 3rem;
+  background: #fff;
+  color: #222;
+  margin: 0 1rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.producthome .slide .content .controls div:hover {
+  background: black;
+  color: #fff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.producthome .slide .image {
+  width: 50%;
+}
+
+.producthome .slide .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Product Home Ends */
+
+.aboutyarn {
+  background: url(../image/about-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding : 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutyarn .content {
+  width: 55rem;
+  background: #fff;
+  padding: 3rem;
+}
+
+.aboutyarn .content span {
+  color: #697184;
+  font-size: 2rem;
+}
+
+.aboutyarn .content h3 {
+  padding-top: 1rem;
+  font-size: 3rem;
+  color: #222;
+}
+
+.aboutyarn .content p {
+  font-size: 1.5rem;
+  color: #777;
+  line-height: 2;
+  padding: 1rem 0;
 }
 
 .menu{
@@ -644,7 +795,7 @@ header .search-bar-container label:hover{
 }
 
 .footer{
-    background-color: #FFAC1C;
+    background-color: #FAF2B5;
 }
 
 .footer .box-container{
@@ -1060,13 +1211,45 @@ header .search-bar-container label:hover{
     padding-top: 1rem;
     color:var(--main-color);
 }
-
-
-
+section #hero {
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+}
 
 
 
 /* media queries  */
+@media(max-width:1920px){
+    #menu-btn{
+        display: initial;
+    }
+
+    #menu-btn.fa-times{
+        transform:rotate(180deg);
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%; left:0; right:75%;
+        background: white;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header .navbar a{
+        display: block;
+        font-size: 2.2rem;
+        margin:0;
+        padding:1rem 6rem;
+        text-align: left;
+    }
+
+}
+
 
 @media(max-width:991px){
 
@@ -1081,6 +1264,29 @@ header .search-bar-container label:hover{
     section{
         padding:2rem;
     }
+    .producthome .slide .content {
+        padding: 2rem;
+      }
+      .producthome .slide .content span {
+        font-size: 2rem;
+      }
+      .producthome .slide .content h3 {
+        font-size: 4rem;
+      }
+
+      .header .navbar{
+        position: absolute;
+        top:99%; left:0; right:60%;
+        background: white;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar a{
+        display: block;
+        font-size: 2.2rem;
+        margin:0;
+        padding:1rem 6rem;
+        text-align: left;
+    }
 
 }
 
@@ -1092,32 +1298,6 @@ header .search-bar-container label:hover{
 
     .heading span{
         font-size: 2.3rem;
-    }
-
-    #menu-btn{
-        display: initial;
-    }
-
-    #menu-btn.fa-times{
-        transform:rotate(180deg);
-    }
-
-    .header .navbar{
-        position: absolute;
-        top:99%; left:0; right:0;
-        background:#fff;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    .header .navbar.active{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    .header .navbar a{
-        display: block;
-        font-size: 2.2rem;
-        margin:0;
-        padding:1.5rem 2rem;
     }
 
     .home{
@@ -1164,6 +1344,45 @@ header .search-bar-container label:hover{
     .prohome .content p{
         font-size: 1.5rem;
     }
+
+    .producthome .slide {
+        position: relative;
+        height: calc(100vh - 6rem);
+      }
+      .producthome .slide .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.7);
+        height: 100%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+      }
+      .producthome .slide .content img {
+        display: inline-block;
+      }
+      .producthome .slide .content .controls {
+        position: static;
+        margin-top: 7rem;
+      }
+      .producthome .slide .content .controls div {
+        margin: 0 .5rem;
+      }
+      .producthome .slide .image {
+        width: 100%;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: none;
+      }
+      .header .navbar{
+        position: absolute;
+        top:99%; left:0; right:0;
+        background: white;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
 }
 
 @media(max-width:450px){
@@ -1176,5 +1395,4 @@ header .search-bar-container label:hover{
         height: auto;
         width: 100%;
     }
-
 }
