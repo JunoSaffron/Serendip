@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products & Quality - Serendip</title>
+    <title>Products - Serendip</title>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Product Link -->
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/prostyle.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
 </head>
 <body>
@@ -25,16 +31,22 @@
     <div id="menu-btn" class="fas fa-bars"></div>
 
     <div>
-        <img src="image/serendip-logo.png" alt="">
+        <!--<img src="image/serendip-logo.png" alt="">-->
+        <i class="fa-brands fa-drupal" style="font-size: 5rem;"></i>
     </div>
  
     <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="products.html">Products & Quality</a>
-        <a href="career.html">Career</a>
+        <a href="index.html"><i class="fas fa-home" style="padding-right: 2rem;"></i>Home</a>
+        <a href="about.html" style="padding-top: 2rem;"><i class="fa-solid fa-address-card" style="padding-right: 2rem;"></i>About</a>
+        <a href="yarn.html" style="padding-top: 2rem;"><i class="fa-solid fa-seedling" style="padding-right: 2rem;"></i>Yarns</a>
+        <a href="products.html" style="padding-top: 2rem;"><i class="fa-solid fa-shirt" style="padding-right: 2rem;"></i>Products</a>
+        <a href="capacity.html" style="padding-top: 2rem;"><i class="fa-solid fa-warehouse" style="padding-right: 2rem;"></i>Capacities</a>
+        <a href="capability.html" style="padding-top: 2rem;"><i class="fa-solid fa-boxes-stacked" style="padding-right: 2rem;"></i>Capabilities</a>
+        <a href="quality.html" style="padding-top: 2rem;"><i class="fa-solid fa-medal" style="padding-right: 2rem;"></i>Quality</a>
+        <a href="csr.html" style="padding-top: 2rem;"><i class="fa-solid fa-hand-holding-heart" style="padding-right: 2rem;"></i>CSR</a>
+        <a href="career.html" style="padding-top: 2rem;"><i class="fa-solid fa-briefcase" style="padding-right: 2rem;"></i>Career</a>
         <!--<a href="gallery.html">Gallery</a>-->
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" style="padding-top: 2rem;"><i class="fa-solid fa-envelopes-bulk" style="padding-right: 2rem;"></i>Contact</a>
     </nav>
 
     <div class="icons">
@@ -72,7 +84,8 @@
 
 <!-- login form ends -->
 
-<section class="prohome" id="prohome">
+<!-- product slider starts -->
+<!--<section class="prohome" id="prohome">
     <div class="swiper-container image-slider">
         <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="image/shot-01.jpg" alt=""></div>
@@ -87,14 +100,15 @@
         </div>
     </div>
 
-</section>
+</section>-->
+<!-- product slider ends -->
 
 <section class="promenu" id="promenu">
 
-    <h1 class="heading" style="padding-top: 0.10px;"> Our Products </h1>
+    <h1 class="heading" style="padding-top: 12rem;"> Our Products </h1>
     <br>
     <br>
-    <div class="box-container">
+    <!--<div class="box-container">
 
         <a href="#" class="box">
             <h3 style="font-size: 2.5rem; color: #444;">Flat-Knit Styles</h3>
@@ -128,55 +142,135 @@
             </div>
         </a>
 
-    </div>
+    </div>-->
 </section>
 
 <!-- products section ends -->
 
-<!-- quality section starts -->
+<!-- Product Display starts -->
+<ul class="cd-gallery">
+    <li>
+        <ul class="cd-item-wrapper">
+            <li class="selected">
+                <img src="img/ugmonk-tshirt-1.jpg" alt="Preview image">
+            </li>
 
-<section class="about" id="about">
+            <li class="move-right">
+                <img src="img/ugmonk-tshirt-2.jpg" alt="Preview image">
+            </li>
 
-    <h1 class="heading"> Quality </h1>  
-    <div class="row">
-        <div class="content">
-                <h3 class="title" style="text-align: center;">What makes our product special!</h3>
-                <br>
-                <p style="font-size: 1.8rem;">We ensure all our products are delivered in the best quality. We have standardized all our purchases according to our customer preferences and AQL standards. We perform constant periodical quality inspections in the process flow.</p>
+            <li>
+                <img src="img/ugmonk-tshirt-3.jpg" alt="Preview image">
+            </li>
+        </ul>
+        <div class="cd-item-info">
+            <b><a href="#0">Flat-Knit Styles</a></b>
+            <em class="cd-price">Jumpers</em>
         </div>
-    </div>
+    </li>
 
-</section>
+    <li>
+        <ul class="cd-item-wrapper">
+            <li class="selected">
+                <img src="img/ugmonk-tshirt-1.jpg" alt="Preview image">
+            </li>
 
-<!-- quality section ends -->
+            <li class="move-right">
+                <img src="img/ugmonk-tshirt-2.jpg" alt="Preview image">
+            </li>
 
-<!-- certificate section starts -->
-<section class="cerabout" id="cerabout">
-
-    <h1 class="heading"> Ethical Compliance </h1>
-
-    <div class="row">
-        <div class="image">
-            <img src="image/cer-01.png" alt="">
+            <li>
+                <img src="img/ugmonk-tshirt-3.jpg" alt="Preview image">
+            </li>
+        </ul>
+        <div class="cd-item-info">
+            <b><a href="#0">Flat-Knit Styles</a></b>
+            <em class="cd-price">Cardigan</em>
         </div>
-        <div class="image">
-            <img src="image/cer-02.png" alt="">
-        </div>
-        <div class="image">
-            <img src="image/cer-03.png" alt="">
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="content">
-            <p style="font-size: 1.8rem;">We have procured the above certificates. OEKO-TEX STEP certification is under process. We adhere to all the statutory ethical norms and standards laid by the GOI and other global agencies.</p>
-        </div>
-    </div>
+    </li>
 
-</section>
-<!-- about section ends -->
+    <li>
+        <ul class="cd-item-wrapper">
+            <li class="selected">
+                <img src="img/ugmonk-tshirt-1.jpg" alt="Preview image">
+            </li>
 
-<!-- certificate section ends -->
+            <li class="move-right">
+                <img src="img/ugmonk-tshirt-2.jpg" alt="Preview image">
+            </li>
+
+            <li>
+                <img src="img/ugmonk-tshirt-3.jpg" alt="Preview image">
+            </li>
+        </ul>
+        <div class="cd-item-info">
+            <b><a href="#0">Flat-Knit Styles</a></b>
+            <em class="cd-price">Scarves/Stoles</em>
+        </div>
+    </li>
+
+    <li>
+        <ul class="cd-item-wrapper">
+            <li class="selected">
+                <img src="img/ugmonk-cap-1.jpg" alt="Preview image">
+            </li>
+
+            <li class="move-right">
+                <img src="img/ugmonk-cap-2.jpg" alt="Preview image">
+            </li>
+
+            <li>
+                <img src="img/ugmonk-cap-3.jpg" alt="Preview image">
+            </li>
+        </ul> 
+        <div class="cd-item-info">
+            <b><a href="#0">Circular-Knit Styles</a></b>
+            <em class="cd-price">Joggers</em>
+        </div>
+    </li>
+
+    <li>
+        <ul class="cd-item-wrapper">
+            <li class="selected">
+                <img src="img/ugmonk-cap-1.jpg" alt="Preview image">
+            </li>
+
+            <li class="move-right">
+                <img src="img/ugmonk-cap-2.jpg" alt="Preview image">
+            </li>
+
+            <li>
+                <img src="img/ugmonk-cap-3.jpg" alt="Preview image">
+            </li>
+        </ul> 
+        <div class="cd-item-info">
+            <b><a href="#0">Wovens</a></b>
+            <em class="cd-price">Night Pyjamas</em>
+        </div>
+    </li>
+
+    <li>
+        <ul class="cd-item-wrapper">
+            <li class="selected">
+                <img src="img/ugmonk-cap-1.jpg" alt="Preview image">
+            </li>
+
+            <li class="move-right">
+                <img src="img/ugmonk-cap-2.jpg" alt="Preview image">
+            </li>
+
+            <li>
+                <img src="img/ugmonk-cap-3.jpg" alt="Preview image">
+            </li>
+        </ul> 
+        <div class="cd-item-info">
+            <b><a href="#0">Embroidery</a></b>
+            <em class="cd-price">Kids</em>
+        </div>
+    </li>
+</ul>
+
+<!-- Product Display ends -->
 
 <!-- footer section starts  -->
 
@@ -244,8 +338,6 @@
 
 
 
-
-
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- script part  -->
@@ -254,6 +346,9 @@
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
 
 </body>
 </html>
