@@ -30,12 +30,14 @@ section{
 
 .heading{
 
-    font-size: 6.5rem;
+	font-size: 5rem;
+	text-align: center;
+    /*font-size: 6.5rem;
     color: #7B3F00;
     text-transform: uppercase;
     text-align: center;
     pointer-events: none;
-    position: relative;
+    position: relative;*/
 }
 
 .heading span{
@@ -74,7 +76,7 @@ section{
 header{
   position: fixed;
   top:0; left: 0; right:0;
-  background:white;
+  background-color: #E8E8E8;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -795,7 +797,7 @@ header .search-bar-container label:hover{
 }
 
 .footer{
-    background-color: #FAF2B5;
+    background-color: #E8E8E8;
 }
 
 .footer .box-container{
@@ -1244,7 +1246,7 @@ section #hero {
     .header .navbar{
         position: absolute;
         top:100%; left:0; right:75%;
-        background: white;
+        background-color: #E8E8E8;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
@@ -1270,7 +1272,14 @@ section #hero {
     }
 
     .header{
-        padding:2rem;
+        /*padding:2rem;*/
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 
     section{
@@ -1289,7 +1298,7 @@ section #hero {
       .header .navbar{
         position: absolute;
         top:99%; left:0; right:60%;
-        background: white;
+        background-color: #E8E8E8;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
     .header .navbar a{
@@ -1392,7 +1401,7 @@ section #hero {
       .header .navbar{
         position: absolute;
         top:99%; left:0; right:0;
-        background: white;
+        background-color: #E8E8E8;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 }
