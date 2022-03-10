@@ -29,15 +29,20 @@ section{
 }
 
 .heading{
-
 	font-size: 5rem;
 	text-align: center;
     /*font-size: 6.5rem;
-    color: #7B3F00;
+    color: #696969;
     text-transform: uppercase;
     text-align: center;
     pointer-events: none;
     position: relative;*/
+}
+
+.empheading{
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 5rem;
 }
 
 .heading span{
@@ -92,7 +97,7 @@ header .logo{
 }
 
 header .logo span{
-  color:#7B3F00;
+  color:#696969;
 }
 
 header .navbar a{
@@ -102,8 +107,7 @@ header .navbar a{
 }
 
 header .navbar a:hover{
-  font-size: 2.3rem;
-  font-weight: bolder;
+  font-size: 2.4rem;
 }
 
 header .icons i{
@@ -114,7 +118,7 @@ header .icons i{
 }
 
 header .icons i:hover{
-  color:#7B3F00;
+  color:#696969;
 }
 
 header .search-bar-container{
@@ -153,7 +157,7 @@ header .search-bar-container label{
 }
 
 header .search-bar-container label:hover{
-  color:#7B3F00;
+  color:#696969;
 }
 
 .login-form-container{
@@ -416,7 +420,7 @@ header .search-bar-container label:hover{
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background: #FAF2B5;
+  background: #F6F6F2;
   position: relative;
 }
 
@@ -860,9 +864,6 @@ header .search-bar-container label:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-flow: column;
-  position: relative;
-  z-index: 0;
 }
 
 .abouthome .content{
@@ -913,6 +914,64 @@ header .search-bar-container label:hover{
 }
 
 .abouthome .controls .vid-btn.active{
+  background:var(--orange);
+}
+
+.careerabouthome{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.careerabouthome .content{
+  text-align: center;
+}
+
+.careerabouthome .content h3{
+  font-size: 4.5rem;
+  color:#fff;
+  text-transform: uppercase;
+  text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+}
+
+.careerabouthome .content p{
+  font-size: 2.5rem;
+  color:#fff;
+  padding:.5rem 0;
+}
+
+.careerabouthome .video-container video{
+  position: absolute;
+  top:62rem; left: 0;
+  z-index: -1;
+  height: 100%;
+  width:100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  object-fit: cover;
+  align-items: center;
+}
+
+.careerabouthome .controls{
+  padding:1rem;
+  border-radius: 5rem;
+  background:rgba(0,0,0,.7);
+  position: relative;
+  top:25rem;
+}
+
+.careerabouthome .controls .vid-btn{
+  height:2rem;
+  width:2rem;
+  display: inline-block;
+  border-radius: 50%;
+  background:#fff;
+  cursor: pointer;
+  margin:0 .5rem;
+}
+
+.careerabouthome .controls .vid-btn.active{
   background:var(--orange);
 }
 
@@ -1115,7 +1174,7 @@ header .search-bar-container label:hover{
 
 .prohome .content h3{
   font-size: 6.5rem;
-  color:#7B3F00;
+  color:#696969;
 }
 
 .prohome .content p{
@@ -1309,6 +1368,64 @@ section #hero {
         padding:1rem 6rem;
         text-align: left;
     }
+    .abouthome {
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .abouthome .video-container video{
+        position: absolute;
+        top:0; left: 0;
+        z-index: -1;
+        height: 60%;
+        width:100%;
+        padding-top: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        object-fit: cover;
+        align-items: center;
+      }
+
+    .abouthome .controls{
+        padding:1rem;
+        border-radius: 5rem;
+        background:rgba(0,0,0,.7);
+        position: relative;
+        top:15rem;
+      }
+
+      .careerabouthome {
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .careerabouthome .video-container video{
+        position: absolute;
+        top:62rem; left: 0;
+        z-index: -1;
+        height: 100%;
+        width:100%;
+        padding-top: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        object-fit: cover;
+        align-items: center;
+      }
+
+    .careerabouthome .controls{
+        padding:1rem;
+        border-radius: 5rem;
+        background:rgba(0,0,0,.7);
+        position: relative;
+        top:30rem;
+      }
+      .empheading{
+          font-size: 5rem;
+          text-align: center;
+          padding-top: 25rem;
+        }
 
 }
 
@@ -1405,6 +1522,53 @@ section #hero {
         background-color: #E8E8E8;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
+    .abouthome .video-container video{
+        position: absolute;
+        top:0; left: 0;
+        z-index: -1;
+        height: 60%;
+        width:100%;
+        padding-top: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        object-fit: cover;
+        align-items: center;
+      }
+
+    .abouthome .controls{
+        padding:1rem;
+        border-radius: 5rem;
+        background:rgba(0,0,0,.7);
+        position: relative;
+        top:15rem;
+      }
+
+      .careerabouthome .video-container video{
+        position: absolute;
+        top:75rem; left: 0;
+        z-index: -1;
+        height: 60%;
+        width:100%;
+        padding-top: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        object-fit: cover;
+        align-items: center;
+      }
+
+    .careerabouthome .controls{
+        padding:1rem;
+        border-radius: 5rem;
+        background:rgba(0,0,0,.7);
+        position: relative;
+        top:10rem;
+      }
+
+      .empheading{
+          font-size: 5rem;
+          text-align: center;
+          padding-top: 3rem;
+        }
 }
 
 @media(max-width:450px){
@@ -1417,4 +1581,54 @@ section #hero {
         height: auto;
         width: 100%;
     }
+
+    .abouthome .video-container video{
+        position: absolute;
+        top:0; left: 0;
+        z-index: -1;
+        height: 60%;
+        width:100%;
+        padding-top: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        object-fit: cover;
+        align-items: center;
+      }
+
+    .abouthome .controls{
+        padding:1rem;
+        border-radius: 5rem;
+        background:rgba(0,0,0,.7);
+        position: relative;
+        top:15rem;
+      }
+
+      .careerabouthome .video-container video{
+        position: absolute;
+        top:105rem; left: 0;
+        z-index: -1;
+        height: 60%;
+        width:100%;
+        padding-top: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        object-fit: cover;
+        align-items: center;
+      }
+
+    .careerabouthome .controls{
+        padding:1rem;
+        border-radius: 5rem;
+        background:rgba(0,0,0,.7);
+        position: relative;
+        top:10rem;
+      }
+
+      .empheading{
+          font-size: 5rem;
+          text-align: center;
+          padding-top: 0rem;
+        }
 }
+
+

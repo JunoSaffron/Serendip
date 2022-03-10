@@ -18,8 +18,8 @@ Main Components
   position: relative;
   margin-bottom: 2em;
   background: #ffffff;
-  border-radius: .25em;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4em;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
 }
 .cd-gallery > li > a {
   display: block;
@@ -29,9 +29,9 @@ Main Components
     margin: 2em auto;
   }
   .cd-gallery > li {
-    width: 48%;
+    width: 30%;
     float: left;
-    margin-right: 4%;
+    margin-left: 2%;
     margin-bottom: 2.5em;
   }
   .cd-gallery > li:nth-of-type(2n) {
@@ -257,7 +257,7 @@ Main Components
   font-size: 2rem;
 }
 .cd-item-info b {
-  float: left;
+  float: center;
 }
 .cd-item-info b a {
   color: #2f2933;
