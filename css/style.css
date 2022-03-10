@@ -779,6 +779,82 @@ header .search-bar-container label:hover{
     color:var(--main-color);
 }
 
+
+.capabout .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.capabout .row .image{
+    flex:1 1 42rem;
+}
+
+.capabout .row .image img{
+    width: 100%;
+    animation:capaboutImage 4s linear infinite;
+}
+
+@keyframes capaboutImage {
+    0%, 100%{
+        transform: scale(.9);
+        border-radius: var(--border-radius-hover);
+    }
+    50%{
+        transform: scale(.8);
+        border-radius: var(--border-radius);
+    }
+}
+
+.capabout .row .content{
+    flex:1 1 42rem;
+}
+
+.capabout .row .content .title{
+    color:var(--main-color);
+    font-size: 3rem;
+    line-height: 1.8;
+}
+
+.capabout .row .content p{
+    color:var(--main-color);
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding:1rem 0;
+}
+
+.capabout .row .content ul{
+    color:var(--main-color);
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding:1rem 0;
+}
+.capabout .row .content .icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    padding-top: 3rem;
+}
+
+.capabout .row .content .icons-container .icons{
+    flex:1 1 15rem;
+    padding:1.5rem;
+    text-align: center;
+    border:var(--border);
+    border-radius: var(--border-radius);
+}
+
+.capabout .row .content .icons-container .icons img{
+    height: 5rem;
+}
+
+.capabout .row .content .icons-container .icons h3{
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    color:var(--main-color);
+}
+
 .tm-map {
   max-width: 900px;
   height: 450px;
@@ -853,6 +929,13 @@ header .search-bar-container label:hover{
 }
 
 .footer .box-container .box .cabout .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:0.6rem;
+}
+
+.footer .box-container .box .capabout .row{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -1279,17 +1362,18 @@ section #hero {
     padding: 0;
 }
 .wrapper{
-  width: 100%;
-  height: 100vh;
+  min-width: 100%;
+  min-height: 100vh;
   overflow: hidden;
+  position: absolute;
 }
 
 .wrapper .wrapper__video{
+  padding-top: 10rem;
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-
 
 
 
@@ -1320,6 +1404,10 @@ section #hero {
         margin:0;
         padding:1rem 6rem;
         text-align: left;
+    }
+
+    .capabout .heading{
+        padding-top: 88rem;
     }
 
 }
@@ -1365,7 +1453,7 @@ section #hero {
         display: block;
         font-size: 2.2rem;
         margin:0;
-        padding:1rem 6rem;
+        padding:1.5rem 6rem;
         text-align: left;
     }
     .abouthome {
@@ -1427,6 +1515,10 @@ section #hero {
           padding-top: 25rem;
         }
 
+      .capabout .heading{
+        padding-top: 73rem;
+      }
+
 }
 
 @media(max-width:768px){
@@ -1462,7 +1554,6 @@ section #hero {
     .promenu .box-container .box{
         margin-left: 0;
         margin-top: 6rem;
-        flex-flow: column;
         text-align: center;
     }
 
@@ -1569,6 +1660,10 @@ section #hero {
           text-align: center;
           padding-top: 3rem;
         }
+
+      .capabout .heading{
+        padding-top: 60rem;
+      }
 }
 
 @media(max-width:450px){
@@ -1629,6 +1724,35 @@ section #hero {
           text-align: center;
           padding-top: 0rem;
         }
+
+      .capabout .heading{
+        padding-top: 42rem;
+      }
+}
+
+
+@media(max-width:385px){
+
+      .careerabouthome .video-container video{
+        position: absolute;
+        top:110rem; left: 0;
+        z-index: -1;
+        height: 60%;
+        width:100%;
+        padding-top: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        object-fit: cover;
+        align-items: center;
+      }
+
+    .careerabouthome .controls{
+        padding:1rem;
+        border-radius: 5rem;
+        background:rgba(0,0,0,.7);
+        position: relative;
+        top:10rem;
+      }
 }
 
 
