@@ -38,6 +38,25 @@ function prev(){
   slides[index].classList.add('active');
 };
 
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+
 var swiper = new Swiper(".products-slider", {
   loop: true,
   grabCursor : true,
@@ -101,7 +120,7 @@ var swiper = new Swiper(".review-slider", {
     loop : true,
     grabCursor: true,
     autoplay: {
-        delay: 7500,
+        delay: 10000,
         disableOnInteraction: false,
     },
     breakpoints: {
