@@ -1586,7 +1586,10 @@ section #hero {
   height: 100%;
 }
 
-
+.responsive-youtube{
+width:530px;
+height: 315px;
+}
 
 /* media queries  */
 @media(max-width:1920px){
@@ -1624,41 +1627,36 @@ section #hero {
     .capacityabout .heading{
         padding-top: 88rem;
     }
-
 }
 
-
-@media(max-width:991px){
-
-    html{
-        font-size: 55%;
+@media (min-width: 1281px) {
+    .capacityabout .heading{
+        padding-top: 120rem;
     }
 
-    .header{
-        /*padding:2rem;*/
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
+    .careerabouthome .controls{
+        padding:1rem;
+        border-radius: 5rem;
+        background:rgba(0,0,0,.7);
+        position: relative;
+        top:60rem;
+      }
+    
+    .empheading{
+          font-size: 5rem;
+          text-align: center;
+          padding-top: 20rem;
+        }
+}
 
-    section{
-        padding:2rem;
-    }
-    .producthome .slide .content {
-        padding: 2rem;
-      }
-      .producthome .slide .content span {
-        font-size: 2rem;
-      }
-      .producthome .slide .content h3 {
-        font-size: 4rem;
-      }
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
 
-      .header .navbar{
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  .header .navbar{
         position: absolute;
         top:99%; left:0; right:60%;
         background-color: #E8E8E8;
@@ -1671,42 +1669,14 @@ section #hero {
         padding:1.5rem 6rem;
         text-align: left;
     }
-    .abouthome {
-        min-height: 60vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .abouthome .video-container video{
-        position: absolute;
-        top:0; left: 0;
-        z-index: -1;
-        height: 60%;
-        width:100%;
-        padding-top: 10%;
-        padding-left: 5%;
-        padding-right: 5%;
-        object-fit: cover;
-        align-items: center;
+
+    .capacityabout .heading{
+        padding-top: 68rem;
       }
 
-    .abouthome .controls{
-        padding:1rem;
-        border-radius: 5rem;
-        background:rgba(0,0,0,.7);
-        position: relative;
-        top:15rem;
-      }
-
-      .careerabouthome {
-        min-height: 60vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
     .careerabouthome .video-container video{
         position: absolute;
-        top:62rem; left: 0;
+        top:63rem; left: 0;
         z-index: -1;
         height: 100%;
         width:100%;
@@ -1716,32 +1686,17 @@ section #hero {
         object-fit: cover;
         align-items: center;
       }
-
-    .careerabouthome .controls{
-        padding:1rem;
-        border-radius: 5rem;
-        background:rgba(0,0,0,.7);
-        position: relative;
-        top:30rem;
-      }
-      .empheading{
-          font-size: 5rem;
-          text-align: center;
-          padding-top: 25rem;
-        }
-
-      .capabout .heading{
-        padding-top: 73rem;
-      }
-
-      .capacityabout .heading{
-        padding-top: 73rem;
-      }
+  
 }
 
-@media(max-width:768px){
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
 
-    .heading{
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .heading{
         font-size: 6rem;
     }
 
@@ -1831,6 +1786,14 @@ section #hero {
         background-color: #E8E8E8;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
+
+    .abouthome {
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .abouthome .video-container video{
         position: absolute;
         top:0; left: 0;
@@ -1849,7 +1812,7 @@ section #hero {
         border-radius: 5rem;
         background:rgba(0,0,0,.7);
         position: relative;
-        top:15rem;
+        top:7rem;
       }
 
       .careerabouthome .video-container video{
@@ -1884,13 +1847,79 @@ section #hero {
       }
 
       .capacityabout .heading{
-        padding-top: 60rem;
+        padding-top: 55rem;
       }
 }
 
-@media(max-width:450px){
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
 
-    html{
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  .abouthome {
+        min-height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .abouthome .video-container video{
+        position: absolute;
+        top:0; left: 0;
+        z-index: -1;
+        height: 80%;
+        width:100%;
+        padding-top: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        object-fit: cover;
+        align-items: center;
+      }
+
+    .abouthome .controls{
+        padding:1rem;
+        border-radius: 5rem;
+        background:rgba(0,0,0,.7);
+        position: relative;
+        top:25rem;
+      }
+
+      .capacityabout .heading{
+        padding-top: 70rem;
+      }
+
+      .careerabouthome .video-container video{
+        position: absolute;
+        top:65rem; left: 0;
+        z-index: -1;
+        height: 100%;
+        width:100%;
+        padding-top: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        object-fit: cover;
+        align-items: center;
+      }
+
+    .careerabouthome .controls{
+        padding:1rem;
+        border-radius: 5rem;
+        background:rgba(0,0,0,.7);
+        position: relative;
+        top:20rem;
+      }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  html{
         font-size: 50%;
     }
 
@@ -1954,14 +1983,89 @@ section #hero {
       .capacityabout .heading{
         padding-top: 42rem;
       }
-}
 
-
-@media(max-width:385px){
-
-      .careerabouthome .video-container video{
+      .header .navbar{
         position: absolute;
-        top:110rem; left: 0;
+        top:99%; left:0; right:0;
+        background-color: #E8E8E8;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .producthome .slide {
+        position: relative;
+        height: calc(100vh - 6rem);
+      }
+      .producthome .slide .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.7);
+        height: 100%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+      }
+      .producthome .slide .content img {
+        display: inline-block;
+      }
+      .producthome .slide .content .controls {
+        position: static;
+        margin-top: 7rem;
+      }
+      .producthome .slide .content .controls div {
+        margin: 0 .5rem;
+      }
+      .producthome .slide .image {
+        width: 100%;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: none;
+      }
+      .abouthome{
+        min-height: 60vh;
+      }
+
+      .abouthome .video-container video{
+        position: absolute;
+        top:0; left: 0;
+        z-index: -1;
+        height: 60%;
+        width:100%;
+        padding-top: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        object-fit: cover;
+        align-items: center;
+      }
+
+    .abouthome .controls{
+        padding:1rem;
+        border-radius: 5rem;
+        background:rgba(0,0,0,.7);
+        position: relative;
+        top:20rem;
+        padding-bottom: 0rem;
+      }
+      .capacityabout .heading{
+        padding-top: 45rem;
+      }
+
+      .header{
+        /*padding:2rem;*/
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    
+    .careerabouthome .video-container video{
+        position: absolute;
+        top:90rem; left: 0;
         z-index: -1;
         height: 60%;
         width:100%;
@@ -1977,18 +2081,132 @@ section #hero {
         border-radius: 5rem;
         background:rgba(0,0,0,.7);
         position: relative;
-        top:10rem;
+        top:5rem;
       }
+
+      .careerabouthome {
+        min-height: 62vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
 
-.responsive-youtube{
-width:530px;
-height: 315px;
-}
-@media (min-width: 0) and (max-width:425px){
-.responsive-youtube{
-width:100%;
-height: 198px;
-}
+@media (min-width: 320px) and (max-width: 480px) {
+  html{
+        font-size: 40%;
+    }
+
+  .header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+    .header .navbar{
+        position: absolute;
+        top:99%; left:0; right:0;
+        background-color: #E8E8E8;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    
+    .producthome .slide {
+        position: relative;
+        height: calc(100vh - 6rem);
+      }
+      .producthome .slide .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.7);
+        height: 100%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+      }
+      .producthome .slide .content img {
+        display: inline-block;
+      }
+      .producthome .slide .content .controls {
+        position: static;
+        margin-top: 7rem;
+      }
+      .producthome .slide .content .controls div {
+        margin: 0 .5rem;
+      }
+      .producthome .slide .image {
+        width: 100%;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: none;
+      }
+      .abouthome {
+        min-height: 60vh;
+        display: f
+        .capacityabout .heading{
+        padding-top: 73rem;
+      }lex;
+        align-items: center;
+        justify-content: center;
+    }
+    .abouthome .video-container video{
+        position: absolute;
+        top:0; left: 0;
+        z-index: -1;
+        height: 60%;
+        width:100%;
+        padding-top: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        object-fit: cover;
+        align-items: center;
+      }
+
+    .abouthome .controls{
+        padding:1rem;
+        border-radius: 5rem;
+        background:rgba(0,0,0,.7);
+        position: relative;
+        top:15rem;
+      }
+      .capacityabout .heading{
+        padding-top: 40rem;
+      }
+
+      .careerabouthome .video-container video{
+        position: absolute;
+        top:105rem; left: 0;
+        z-index: -1;
+        height: 60%;
+        width:100%;
+        padding-top: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        object-fit: cover;
+        align-items: center;
+      }
+
+    .careerabouthome .controls{
+        padding:1rem;
+        border-radius: 5rem;
+        background:rgba(0,0,0,.7);
+        position: relative;
+        top:5rem;
+      }
+
+      .careerabouthome {
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
