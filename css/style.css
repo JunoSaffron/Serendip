@@ -2097,7 +2097,7 @@ height: 315px;
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 413px) {
   html{
         font-size: 40%;
     }
@@ -2184,7 +2184,7 @@ height: 315px;
 
       .careerabouthome .video-container video{
         position: absolute;
-        top:105rem; left: 0;
+        top:90rem; left: 0;
         z-index: -1;
         height: 60%;
         width:100%;
@@ -2200,7 +2200,125 @@ height: 315px;
         border-radius: 5rem;
         background:rgba(0,0,0,.7);
         position: relative;
-        top:5rem;
+        top:10rem;
+      }
+
+      .careerabouthome {
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 414px) {
+    html{
+        font-size: 40%;
+    }
+
+  .header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:99%; left:0; right:0;
+        background-color: #E8E8E8;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    
+    .producthome .slide {
+        position: relative;
+        height: calc(100vh - 6rem);
+      }
+      .producthome .slide .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.7);
+        height: 100%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+      }
+      .producthome .slide .content img {
+        display: inline-block;
+      }
+      .producthome .slide .content .controls {
+        position: static;
+        margin-top: 7rem;
+      }
+      .producthome .slide .content .controls div {
+        margin: 0 .5rem;
+      }
+      .producthome .slide .image {
+        width: 100%;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: none;
+      }
+
+      .abouthome {
+        min-height: 60vh;
+        display: f
+        .capacityabout .heading{
+        padding-top: 73rem;
+      }lex;
+        align-items: center;
+        justify-content: center;
+    }
+    .abouthome .video-container video{
+        position: absolute;
+        top:0; left: 0;
+        z-index: -1;
+        height: 60%;
+        width:100%;
+        padding-top: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        object-fit: cover;
+        align-items: center;
+      }
+
+    .abouthome .controls{
+        padding:1rem;
+        border-radius: 5rem;
+        background:rgba(0,0,0,.7);
+        position: relative;
+        top:15rem;
+      }
+
+
+      .capacityabout .heading{
+        padding-top: 48rem;
+      }
+
+    .careerabouthome .video-container video{
+        position: absolute;
+        top:80rem; left: 0;
+        z-index: -1;
+        height: 60%;
+        width:100%;
+        padding-top: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        object-fit: cover;
+        align-items: center;
+      }
+
+    .careerabouthome .controls{
+        padding:1rem;
+        border-radius: 5rem;
+        background:rgba(0,0,0,.7);
+        position: relative;
+        top:10rem;
       }
 
       .careerabouthome {
