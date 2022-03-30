@@ -52,7 +52,7 @@ section{
 .empheading{
   font-size: 5rem;
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 0rem;
 }
 
 .heading span{
@@ -1645,7 +1645,7 @@ height: 315px;
     .empheading{
           font-size: 5rem;
           text-align: center;
-          padding-top: 20rem;
+          padding-top: 0rem;
         }
 }
 
@@ -1839,7 +1839,7 @@ height: 315px;
       .empheading{
           font-size: 5rem;
           text-align: center;
-          padding-top: 3rem;
+          padding-top: 0rem;
         }
 
       .capabout .heading{
@@ -2097,7 +2097,7 @@ height: 315px;
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 413px) {
+@media (min-width: 320px) and (max-width: 480px) {
   html{
         font-size: 40%;
     }
@@ -2179,7 +2179,7 @@ height: 315px;
         top:15rem;
       }
       .capacityabout .heading{
-        padding-top: 40rem;
+        padding-top: 50rem;
       }
 
       .careerabouthome .video-container video{
@@ -2204,7 +2204,7 @@ height: 315px;
       }
 
       .careerabouthome {
-        min-height: 60vh;
+        min-height: 70vh;
         display: flex;
         align-items: center;
         justify-content: center;
