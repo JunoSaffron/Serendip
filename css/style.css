@@ -1581,10 +1581,15 @@ section #hero {
   height: 100%;
 }
 
-.responsive-youtube{
-width:530px;
-height: 315px;
+.youtubebox .row .content{
+    flex:1 1 42rem;
 }
+
+.youtubebox .row .content iframe{
+    width: 530;
+    height: 314;
+}
+
 
 /* media queries  */
 @media(max-width:1920px){
@@ -1637,7 +1642,7 @@ height: 315px;
           font-size: 5rem;
           text-align: center;
           padding-top: 0rem;
-        }
+    }
 }
 
 /* 
