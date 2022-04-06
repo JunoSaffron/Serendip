@@ -83,7 +83,7 @@ section{
 
 #menu-btn{
     font-size: 3rem;
-    color:black;
+    color:#603913;
     cursor: pointer;
     display: none;
 }
@@ -91,7 +91,7 @@ section{
 header{
   position: fixed;
   top:0; left: 0; right:0;
-  background-color: #E8E8E8;
+  background-color: #f3ede9;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -102,7 +102,7 @@ header{
 header .logo{
   font-size: 2.5rem;
   font-weight: bolder;
-  color:Black;
+  color:#603913;
   text-transform: uppercase;
 }
 
@@ -111,18 +111,18 @@ header .logo span{
 }
 
 header .navbar a{
-  color:black;
+  color:#603913;
   font-size: 2rem;
   margin:0 .8rem;
 }
 
 header .navbar a:hover{
-  font-size: 2.4rem;
+  font-size: 2.5rem;
 }
 
 header .icons i{
   font-size: 2.5rem;
-  color:Black;
+  color:#603913;
   cursor: pointer;
 }
 
@@ -135,10 +135,10 @@ header .search-bar-container{
   top:100%; left: 5%; right:5%;
   padding:1.5rem 2rem;
   background:white;
-  border-top: .1rem solid Black;
-  border-bottom: .1rem solid Black;
-  border-right: .1rem solid Black;
-  border-left: .1rem solid Black;
+  border-top: .1rem solid #603913;
+  border-bottom: .1rem solid #603913;
+  border-right: .1rem solid #603913;
+  border-left: .1rem solid #603913;
   display: flex;
   align-items: center;
   z-index: 1001;
@@ -153,13 +153,13 @@ header .search-bar-container #search-bar{
   width:100%;
   padding:1rem;
   text-transform: none;
-  color:black;
+  color:#603913;
   font-size: 1.7rem;
   border-radius: .5rem;
 }
 
 header .search-bar-container label{
-  color:Black;
+  color:#603913;
   cursor: pointer;
   font-size: 3rem;
   margin-left: 1.5rem;
@@ -429,7 +429,7 @@ header .search-bar-container label:hover{
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background: #F6F6F2;
+  background: #f3ede9;
   position: relative;
 }
 
@@ -457,7 +457,7 @@ header .search-bar-container label:hover{
 .producthome .slide .content h3 {
   font-size: 5.5rem;
   text-transform: uppercase;
-  color: black;
+  color: #603913;
   -webkit-animation: fadeUp .2s linear backwards .6s;
           animation: fadeUp .2s linear backwards .6s;
 }
@@ -480,7 +480,7 @@ header .search-bar-container label:hover{
   text-align: center;
   font-size: 3rem;
   background: #fff;
-  color: black;
+  color: #603913;
   margin: 0 1rem;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -488,7 +488,7 @@ header .search-bar-container label:hover{
 }
 
 .producthome .slide .content .controls div:hover {
-  background: black;
+  background: #603913;
   color: #fff;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -1081,7 +1081,7 @@ header .search-bar-container label:hover{
 }
 
 .footer{
-    background-color: #E8E8E8;
+    background-color: #f3ede9;
 }
 
 .footer .box-container{
@@ -1094,7 +1094,7 @@ header .search-bar-container label:hover{
     font-size: 2.5rem;
     padding:1rem 0;
     /*color:var(--main-color);*/
-    color: black;
+    color: #603913;
 }
 
 .footer .box-container .box a{
@@ -1102,7 +1102,7 @@ header .search-bar-container label:hover{
     font-size: 1.5rem;
     padding:1rem 0;
     /*color:var(--main-color);*/
-    color: black;
+    color: #603913;
 }
 
 .footer .box-container .box a i{
@@ -1123,7 +1123,7 @@ header .search-bar-container label:hover{
     padding:0rem 0rem;
     margin-top: 1rem;
     /*color:var(--main-color);*/
-    color: black;
+    color: #603913;
 }
 
 .footer .credit span{
@@ -1603,7 +1603,7 @@ section #hero {
     .header .navbar{
         position: absolute;
         top:100%; left:0; right:75%;
-        background-color: #E8E8E8;
+        background-color: #f3ede9;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
@@ -1654,7 +1654,7 @@ section #hero {
   .header .navbar{
         position: absolute;
         top:99%; left:0; right:60%;
-        background-color: #E8E8E8;
+        background-color: #f3ede9;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
     .header .navbar a{
@@ -1778,7 +1778,7 @@ section #hero {
       .header .navbar{
         position: absolute;
         top:99%; left:0; right:0;
-        background-color: #E8E8E8;
+        background-color: #f3ede9;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
@@ -1982,7 +1982,7 @@ section #hero {
       .header .navbar{
         position: absolute;
         top:99%; left:0; right:0;
-        background-color: #E8E8E8;
+        background-color: #f3ede9;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
@@ -2108,7 +2108,7 @@ section #hero {
     .header .navbar{
         position: absolute;
         top:99%; left:0; right:0;
-        background-color: #E8E8E8;
+        background-color: #f3ede9;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
     
