@@ -788,6 +788,72 @@ header .search-bar-container label:hover{
     color:var(--main-color);
 }
 
+.capabilityabout .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.capabilityabout .row .image{
+    flex:1 1 42rem;
+}
+
+.capabilityabout .row .image img{
+    width: 100%;
+    border-radius: 10%;
+}
+
+.capabilityabout .row .content{
+    flex:1 1 42rem;
+}
+
+.capabilityabout .row .content .title{
+    color:var(--main-color);
+    font-size: 3rem;
+    line-height: 1.8;
+}
+
+.capabilityabout .row .content p{
+    color:var(--main-color);
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding:1rem 0;
+}
+
+.capabilityabout .row .content ul{
+    color:var(--main-color);
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding:1rem 0;
+}
+.capabilityabout .row .content .icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    padding-top: 3rem;
+}
+
+.capabilityabout .row .content .icons-container .icons{
+    flex:1 1 15rem;
+    padding:1.5rem;
+    text-align: center;
+    border:var(--border);
+    border-radius: var(--border-radius);
+}
+
+.capabilityabout .row .content .icons-container .icons img{
+    height: 5rem;
+}
+
+.capabilityabout .row .content .icons-container .icons h3{
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    color:var(--main-color);
+}
+
+
+//////
 .aboutuspage .row{
     display: flex;
     align-items: center;
