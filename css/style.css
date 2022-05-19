@@ -267,7 +267,7 @@ header .search-bar-container label:hover{
     min-height: 100vh;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background: url(../image/home-bg.jpg) no-repeat;
+    background: url(../image/home-bg.png) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -311,7 +311,6 @@ header .search-bar-container label:hover{
 
 .home .image-slider{
     text-align: center;
-    padding:3rem 0;
 }
 
 .home .image-slider img{
